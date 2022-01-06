@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title bs-white >Portfolio_HDRI</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico'%}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'homepage/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">LIST</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                <li class="sidebar-nav-item"><a href="#stack">What can I do?</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Recent Projects</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 style="color: #FFFF;" class="mb-1">SungMin Heo</h1>
+                <h3 style="color: #FFFF;" class="mb-5"><em>Introduction page</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">about</a>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Introduction page for the learning that has been conducted so far.</h2>
+                        <p class="lead mb-5">
+                            Together with the KDT_AI_dev_course provided by 
+                            <a href="https://programmers.co.kr/">Programmers</a>
+                            .
+                        </p>
+                        <a class="btn btn-dark btn-xl" href="#stack">What did I do?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- stack-->
+        <section class="content-section bg-primary text-white text-center" id="stack">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">stack</h3>
+                    <h2 class="mb-5">What did I do?</h2>
+                </div>
+                <div class="row gx-5 gx-lg-5">
+                    <div class="col-lg-4 col-md-6 mb-6 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-chart"></i></span>
+                        <h4><strong>Python, numpy, pandas, matplotlib...</strong></h4>
+                        <p class="text-faded mb-0">Learning Python Libraries</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-6 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <h4><strong>Tensorflow,Pytorch,Flask,Django...</strong></h4>
+                        <p class="text-faded mb-0">
+                            Learning various Frameworks
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-6 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                        <h4><strong>git, Jupeter notebook, AWS, SQL, Math for ML...</strong></h4>
+                        <p class="text-faded mb-0">
+                            Basic base for development
+                        </p>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                        <h4><strong>I always do my best.</strong></h4>
+                        <p class="text-faded mb-0">I mustache you a question...</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h2 class="mb-5">Recent Projects</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://hsungmin.notion.site/Week4-5-Flask-EDA-2-dfc87d06e4b2445e9ec3549d9026e361" target='_blank'>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">EDA</div>
+                                    <p class="mb-0">Exploratory Data Analysis</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'homepage/assets/img/portfolio-1.JPG'%}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://hsungmin.notion.site/pandas-54515069ecd24b6aa09b3e9dc7a945e5" target='_blank'>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">numpy, Pandas</div>
+                                    <p class="mb-0">Library walkthrough to preprocess data</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'homepage/assets/img/portfolio-2.JPG'%}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://hsungmin.notion.site/with-AWS-II-1276bdc8dd734c55a112c4bc1a1379ac" target='_blank'>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">AWS</div>
+                                    <p class="mb-0">Creating AWS Instances and Connecting Remotely</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'homepage/assets/img/portfolio-3.JPG'%}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://hsungmin.notion.site/Month1-mission-e8859e1476db4231b7231d8d1b8bb890" target='_blank'>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Django, html, css, javascript</div>
+                                    <p class="mb-0">Integrate Django project with AWS</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'homepage/assets/img/portfolio-4.JPG'%}" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Callout-->
+        <section class="callout">
+            <div class="container px-4 px-lg-5 text-center">
+                <h3 style="color: #FFFF;" class="mx-auto mb-4">If you want to see more</h3>
+                <h2 style="color: #FFFF;" class="mx-auto mb-5">
+                    Welcome to
+                    my
+                    notion!
+                </h2>
+                <a class="btn btn-primary btn-xl" href="https://hsungmin.notion.site/main-ac104b9c044e444eb9b796c17c329b84" target='_blank'>Notion</a>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+
+        <!-- <section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+            </div>
+        </section> -->
+
+        <!-- Map-->
+
+        <!-- <div class="map" id="contact">
+            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <br />
+            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
+        </div> -->
+
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="mailto:sungminh.sw@gmail.com" target='_blank'><i class="icon-social-google"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/HRDI0" target='_blank'><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; SungMin Heo 2022</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'homepage/js/scripts.js'%}"></script>
+    </body>
+</html>
