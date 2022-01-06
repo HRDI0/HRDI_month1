@@ -27,6 +27,8 @@ SECRET_KEY = 'django-insecure-9a7k6!3_+sg1=ehgpy!n!nzxc1klbitjgiy1ry!=f%0a00cy(v
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+#aws링크를 반영해주는 부분
+#원래는 개인 aws 링크가 나가야 한다.
 
 
 # Application definition
@@ -123,7 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-  os.path.join(BASE_DIR, 'static'),
+  os.path.join(BASE_DIR, 'static/'),
 ]
 
 # Default primary key field type
